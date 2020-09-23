@@ -1,10 +1,10 @@
 (function(){
     "use strict"
 
-    const nome = document.getElementById('nome');
-    const email = document.getElementById('email');
-    const message = document.getElementById('message');
-    const send = document.getElementById('send');
+    const name = document.querySelector('[data-js="name"]');
+    const email = document.querySelector('[data-js="email"]')
+    const message = document.querySelector('[data-js="message"]')
+    const send = document.querySelector('[data-js="send"]')
 
 
     send.addEventListener('click', () => {
@@ -15,13 +15,13 @@
     });
 
     const verificarFormulario = () =>{
-        nome.value === '' || email.value === '' 
+        name.value === '' || email.value === '' 
         ? alert('Preencha os dados')
         : alert('Enviamos seu contato!');
     }
 
     const limpaFormulario = () =>{
-       nome.value = "";
+       name.value = "";
        email.value = "";
        message.value = "";
     }
