@@ -1,0 +1,64 @@
+
+.section3{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background: #9882be;
+}
+
+.card-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    margin: 40px 0;
+    background: #7e57c2;
+    width: 80%;
+    height: 600px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px;
+}
+
+.card-form h3{
+    text-align: center;
+    text-shadow: 1px 1px 3px rgba(0,0,0,.8);
+    margin-bottom: 10px;
+    font-size: 30px;
+    color: white;
+}
+
+.card-form input[type=submit]{
+    background: #472563;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    border: 0;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    width: 100%;
+}
+
+form input{
+    padding: 10px;
+    width: 800px;
+    max-width: 70%;
+    margin-bottom: 10px;
+}
+
+form textarea{
+    padding: 10px;
+    width: 800px;
+    max-width: 70%;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+
