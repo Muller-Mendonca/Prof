@@ -21,7 +21,19 @@
     width: 100%;
     list-style-type: none;
     border-bottom: 2px solid #472563;
+    animation: SmootherNav 0.3s ease-in-out;
 }
+
+
+@keyframes SmootherNav{
+    from{
+        transform: translateY(-10px);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+
 
 .nav-mobile ul li{
     text-align: center;
