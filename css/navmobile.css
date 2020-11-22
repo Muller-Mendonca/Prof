@@ -3,7 +3,7 @@
     float: right;
 }
 
-.nav-mobile  i{
+.nav-mobile i{
     position: relative;
     font-size: 25px;
     top: 30px;
@@ -13,43 +13,22 @@
 
 .nav-mobile ul{
     display: none;
+    left: 0;
+    top: 68px;
     z-index: 2;
     position: absolute;
     list-style-type: none;
     border-bottom: 2px solid #472563;
+    transition: 0.5s ease;
 }
 
 .nav-mobile ul.ativa-nav{
     display: block;
-    left: 0;
-    top: 65px;
     width: 100%;
     height: 100px;
     background: white;
-    animation: SmootherNav 0.3s forwards;
-    /*FALTA
-    ARRUMAR
-    A
-    ANIMAÇÃO
-    
-
-    E
-
-
-    FAZER ALGUNS AJUSTES NA NAV
-    
-    */
 }
 
-
-@keyframes SmootherNav{
-    from{
-        transform: translateY(-10px);
-    }
-    to{
-        transform: translateY(0);
-    }
-}
 
 
 .nav-mobile ul li{

@@ -2,10 +2,10 @@
    export default function NavMobile(){
 
        const btnNav = document.querySelector('[data-js="navIcon"]');
-       const navUl = document.querySelector('[data-js="navUl"]');
+       const menuMobile = document.querySelector('[data-js="menuMobile"]');
 
        function handleClick(){
-           navUl.classList.toggle('ativa-nav')
+           menuMobile.classList.toggle('ativa')
            console.log('ativado')
        }
 
