@@ -382,6 +382,7 @@ footer{
         flex-direction: column;
         align-items: center;
         position: relative;
+        transition: 1s ease;
     }
 
     #icon{
@@ -394,20 +395,21 @@ footer{
     }
 
     nav{
-        display: none;
+        display: none;  
+    }
+
+    nav.ativa{
+        display: block;
     }
 
     nav ul{
         display: flex;
         flex-direction: column;
+        text-align: center;
     }
 
-    nav.ativa{
-        display: block;
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        background: pink;
+    nav ul li{
+        padding: 20px 0;
     }
 
     .section1{
