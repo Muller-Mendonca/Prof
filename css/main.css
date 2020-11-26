@@ -385,7 +385,7 @@ footer{
 
     #icon{
         display: block;
-        position: absolute;
+        position: fixed;
         right: 10px;
         font-size: 35px;
         color: #472563;
@@ -403,6 +403,9 @@ footer{
         padding: 100px 20px;
         z-index: 998;
         transition: 0.5s ease;
+        -webkit-box-shadow: -1px 1px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px 1px 5px 0px rgba(0,0,0,0.75);
+box-shadow: -1px 1px 5px 0px rgba(0,0,0,0.75);
     }
 
     nav.ativa{
@@ -421,6 +424,7 @@ footer{
 
     nav ul li a{
         padding: 20px 100px;
+        
     }
 
     .section1{
