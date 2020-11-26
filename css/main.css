@@ -23,6 +23,10 @@ html,body{
     padding: 10px;
 }
 
+#icon{
+    display: none;
+}
+
 .border-header{
     border: 1px solid #472563;
 }
@@ -37,10 +41,6 @@ html,body{
 nav{
     margin: 5px;
     background: white;
-}
-
-#icon{
-    display: none;
 }
 
 nav ul li{
@@ -381,8 +381,6 @@ footer{
         display: flex;
         flex-direction: column;
         align-items: center;
-        position: relative;
-        transition: 1s ease;
     }
 
     #icon{
@@ -392,14 +390,23 @@ footer{
         font-size: 35px;
         color: #472563;
         cursor: pointer;
+        z-index: 999;
     }
 
     nav{
-        display: none;  
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        max-width: 350px;
+        height: 100vh;
+        padding: 100px 20px;
+        z-index: 998;
+        transition: 0.5s ease;
     }
 
     nav.ativa{
-        display: block;
+        right: 0;
     }
 
     nav ul{
